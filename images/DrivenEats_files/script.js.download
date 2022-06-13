@@ -23,10 +23,8 @@
    // const selecao = document.querySelector(".container-prato");
    // selecao.classList.add("borda");}
 
-
-
 function selecionarComida(elemento){
-     const clicar = document.querySelector(".op1 .borda");
+    const clicar = document.querySelector(".borda");
     if (clicar !== null){
         clicar.classList.remove("borda")
     }
@@ -34,7 +32,7 @@ function selecionarComida(elemento){
 }
 
 function selecionarBebida(elemento){
-  const clicar = document.querySelector(".op2 .borda");
+  const clicar = document.querySelector(".container-bebida", ".borda");
   if (clicar !== null){
       clicar.classList.remove("borda");
   }
@@ -42,15 +40,12 @@ function selecionarBebida(elemento){
 }
 
 function selecionarSobremesa(elemento){
-  const clicar = document.querySelector(".op3 .borda");
+  const clicar = document.querySelector(".container-sobremesa", ".container-bebida", ".borda");
   if (clicar !== null){
       clicar.classList.remove("borda");
   }
       elemento.classList.add("borda");
 }
-
-
-
 
 //function selecionar(elemento){
   //  const clicou = document.querySelector(".simb-check .container-prato")
@@ -69,12 +64,3 @@ botaoFinal.innerHTML = "Fechar pedido";
 botaoFinal.classList.add("colorir");
 botaoFinal.classList.add("botao-finalizar2");
 }
-
-//function finalizarPedido(){
-
-//  let mensagem="Olá, gostaria de fazer o pedido:"
-//"- Prato:" selecionarComida
-//"- Bebida:" selecionarBebida
-//"- Sobremesa:" selecionarSobremesa
-//"Total:" valor;
-//}

@@ -157,19 +157,13 @@ body{
 .espacamento4{
     height: 100px;
 }
-/*.ocultar{
+.ocultar{
     display: none;
-}*/
+}
 .simb-check{
     position: absolute;
     left: 140px;
     bottom: 12px;
-    display: none;
-}
-.op1 .borda > .simb-check,
-.op2 .borda > .simb-check,
-.op3 .borda > .simb-check{
-    display: block;
 }
 .borda{
     border: 4px solid #32B72F;
