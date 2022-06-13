@@ -1,80 +1,64 @@
-//const botaoFinal = document.querySelector(".botao-finalizar");
-//botaoFinal.innerHTML = "Fechar pedido";
-//botaoFinal.classList.add("colorir");
-//botaoFinal.classList.add("botao-finalizar2");
+   let pratoEscolhido = null;
+   let precoPrato = null;
+  
+   let bebidaEscolhida = null;
+   let precoBebida = null;
 
-//const pedidos = document.querySelector(".container-prato");
-//pedidos.classList.add("borda");
-
-//const check = document.querySelector(".simb-check");
-//check.classList.remove("ocultar");
-
-//function selecionar(){
-   // const check = document.querySelector(".simb-check");
-    //const pedidos = document.querySelector(".container-prato");
-    //if (check !== null && pedidos !== null ) {
-      //  check.classList.remove(".simb-check")
-        //pedidos.classList.add("borda")
-//}
-
-//function selecionar(){
-    //const clicar = document.querySelector(".simb-check");
-   // clicar.classList.remove("ocultar");
-   // const selecao = document.querySelector(".container-prato");
-   // selecao.classList.add("borda");}
+   let sobremesaEscolhida = null;
+   let precoSobremesa = null;
 
 
-
-function selecionarComida(elemento){
+function selecionarComida(elemento, pratoEscolhido, precoPrato){
      const clicar = document.querySelector(".op1 .borda");
     if (clicar !== null){
         clicar.classList.remove("borda")
     }
         elemento.classList.add("borda")
 }
-
-function selecionarBebida(elemento){
+function selecionarBebida(elemento, bebidaEscolhida, precoBebida){
   const clicar = document.querySelector(".op2 .borda");
   if (clicar !== null){
       clicar.classList.remove("borda");
   }
       elemento.classList.add("borda");
 }
-
-function selecionarSobremesa(elemento){
+function selecionarSobremesa(elemento, sobremesaEscolhida, precoSobremesa){
   const clicar = document.querySelector(".op3 .borda");
   if (clicar !== null){
       clicar.classList.remove("borda");
   }
       elemento.classList.add("borda");
 }
+  function botao(){
+    if (pratoEscolhido && bebidaEscolhida && sobremesaEscolhida) {
+      const botaoFinal = document.querySelector(".botao-finalizar");
+      botaoFinal.innerHTML = "Fechar pedido";
+      botaoFinal.classList.add("colorir");
+      window.open("https://api.whatsapp.com/send/?phone=5521982095525&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A%20%0A-%20Prato%3A%20Frango%20Yin%20Yang%20%0A-%20Bebida%3A%20Coquinha%20Gelada%20%0A-%20Sobremesa%3A%20Pudim%20%0ATotal%3A%20R%24%2027.70")
+    }
+  } 
+  console.log(botao)
 
 
+/* FUNCIONAAAA
+  function botao(elemento){
+    if (p1 || p2 || p3 || p4 && b1 || b2 || b3 || b4 && s1 || s2 || s3 || s4) {
+      const botaoFinal = document.querySelector(".botao-finalizar");
+      botaoFinal.innerHTML = "Fechar pedido";
+      botaoFinal.classList.add("colorir");
+      window.open("https://api.whatsapp.com/send/?phone=5521982095525&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A%20%0A-%20Prato%3A%20Frango%20Yin%20Yang%20%0A-%20Bebida%3A%20Coquinha%20Gelada%20%0A-%20Sobremesa%3A%20Pudim%20%0ATotal%3A%20R%24%2027.70")
+    }
+  } 
+ */
 
-
-//function selecionar(elemento){
-  //  const clicou = document.querySelector(".simb-check .container-prato")
-   // elemento.classList.remove(".ocultar");
-   // elemento.classList.add(".borda")
-   // if (clicado !== null){
-  //      clicado.classList.remove(".borda")
-  //  }
-  //  elemento.classList.add(".ocultar")
-  //  }
-
-
+/*   FUNÇÃO FUNCIONANDO
 function botao(){
-const botaoFinal = document.querySelector(".botao-finalizar");
-botaoFinal.innerHTML = "Fechar pedido";
-botaoFinal.classList.add("colorir");
-botaoFinal.classList.add("botao-finalizar2");
-}
+  if (selecionarComida && selecionarBebida && selecionarSobremesa) {
+    const botaoFinal = document.querySelector(".botao-finalizar");
+    botaoFinal.innerHTML = "Fechar pedido";
+    botaoFinal.classList.add("colorir");
+  }
+} */
 
-//function finalizarPedido(){
-
-//  let mensagem="Olá, gostaria de fazer o pedido:"
-//"- Prato:" selecionarComida
-//"- Bebida:" selecionarBebida
-//"- Sobremesa:" selecionarSobremesa
-//"Total:" valor;
-//}
+let mensagem= "Olá, gostaria de fazer o pedido: \n- Prato: Frango Yin Yang \n- Bebida: Coquinha Gelada \n- Sobremesa: Pudim \nTotal: R$ 27.70"
+console.log(encodeURIComponent(mensagem));

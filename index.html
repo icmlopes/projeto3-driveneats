@@ -25,7 +25,7 @@
       <div> <!--DIV Primeiro, seu prato-->
         <p class="titulo">Primeiro, seu prato</p>
         <div class="op1">
-          <div class="container-prato" onclick="selecionarComida(this)">
+          <div class="container-prato" onclick="selecionarComida(this, 'Frango Yin Yang', 14.90)">
             <img src="./images/frango-yin-yang.png" class="foto">
             <p class="nome-prato">Frango Yin Yang</p>
             <p class="desc-prato">Um pouco de batata,</p>
@@ -34,7 +34,7 @@
             <p class="valor">R$14,90</p>
             <img src="./images/check.png" class="simb-check">
           </div>
-          <div class="container-prato" onclick="selecionarComida(this)">
+          <div class="container-prato" onclick="selecionarComida(this, 'Kafta no Espeto', 15.90)">
             <img src="./images/kafta.jpg" class="foto">
             <p class="nome-prato">Kafta no espeto</p>
             <p class="desc-prato">Acompanha salada e</p>
@@ -43,7 +43,7 @@
             <p class="valor">R$15,90</p>
             <img src="./images/check.png" class="simb-check">
           </div>
-          <div class="container-prato" onclick="selecionarComida(this)">
+          <div class="container-prato" onclick="selecionarComida(this, 'Yakissoba', 16.90)">
             <img src="./images/yakisoba.jpg" class="foto">
             <p class="nome-prato">Yakissoba</p>
             <p class="desc-prato">Acompanha gergelim</p>
@@ -52,7 +52,7 @@
             <p class="valor">R$16,90</p>
             <img src="./images/check.png" class="simb-check">
           </div>
-          <div class="container-prato" onclick="selecionarComida(this)">
+          <div class="container-prato" onclick="selecionarComida(this, 'Estrogonofe', 17.90)">
             <img src="./images/strogonoff.jpg" class="foto">
             <p class="nome-prato">Estrogonofe</p>
             <p class="desc-prato">Acompanha arroz e</p>
@@ -69,7 +69,7 @@
       <div> <!--DIV Agora, sua bebida-->
         <p class="titulo">Agora, sua bebida</p>
         <div class="op2">
-          <div class="container-bebida" onclick="selecionarBebida(this)">
+          <div class="container-bebida" onclick="selecionarBebida(this, 'Coquinha gelada', 4.90)">
             <img src="./images/coca-cola.png" class="foto">
             <p class="nome-prato">Coquinha gelada</p>
             <p class="desc-prato">Lata 350ml</p>
@@ -77,7 +77,7 @@
             <p class="valor">R$4,90</p>
             <img src="./images/check.png" class="simb-check">
           </div>
-          <div class="container-bebida" onclick="selecionarBebida(this)">
+          <div class="container-bebida" onclick="selecionarBebida(this, 'Suco Del Valle', 5.90)">
             <img src="./images/suco.jpg" class="foto">
             <p class="nome-prato">Suco Del Valle</p>
             <p class="desc-prato">Lata 290ml</p>
@@ -85,7 +85,7 @@
             <p class="valor">R$5,90</p>
             <img src="./images/check.png" class="simb-check">
           </div>
-          <div class="container-bebida" onclick="selecionarBebida(this)">
+          <div class="container-bebida" onclick="selecionarBebida(this, 'Água com gás', 6.90)">
             <img src="./images/agua-gas.jpg" class="foto">
             <p class="nome-prato">Água com gás</p>
             <p class="desc-prato">Garrafa 500ml</p>
@@ -93,7 +93,7 @@
             <p class="valor">R$6,90</p>
             <img src="./images/check.png" class="simb-check">
           </div>
-          <div class="container-bebida" onclick="selecionarBebida(this)">
+          <div class="container-bebida" onclick="selecionarBebida(this, 'Guaraná Jesus', 7.90)">
             <img src="./images/jesus.jpg" class="foto">
             <p class="nome-prato">Guaraná Jesus</p>
             <p class="desc-prato">Lata 350ml</p>
@@ -109,7 +109,7 @@
       <div> <!--DIV Por fim, sua sobremesa-->
         <p class="titulo">Por fim, sua sobremesa</p>
         <div class="op3">
-            <div class="container-sobremesa" onclick="selecionarSobremesa(this)">
+            <div class="container-sobremesa" onclick="selecionarSobremesa(this, 'Pudim', 7.90)">
               <img src="./images/pudim.png" class="foto">
               <p class="nome-prato">Pudim</p>
               <p class="desc-prato">Apenas pudim</p>
@@ -117,7 +117,7 @@
               <p class="valor">R$7,90</p>
               <img src="./images/check.png" class="simb-check">
             </div>
-            <div class="container-sobremesa" onclick="selecionarSobremesa(this)">
+            <div class="container-sobremesa" onclick="selecionarSobremesa(this, 'Brigadeiro de Colher', 8.90)">
               <img src="./images/brigadeiro.jpg" class="foto">
               <p class="nome-prato">Brigadeiro de colher</p>
               <p class="desc-prato">Apenas brigadeiro</p>
@@ -125,7 +125,7 @@
               <p class="valor">R$8,90</p>
               <img src="./images/check.png" class="simb-check">
             </div>
-            <div class="container-sobremesa" onclick="selecionarSobremesa(this)">
+            <div class="container-sobremesa" onclick="selecionarSobremesa(this, 'Torta alemã', 9.90)">
               <img src="./images/torta-alema.jpg" class="foto">
               <p class="nome-prato">Torta Alemã</p>
               <p class="desc-prato">Apenas torta</p>
@@ -133,7 +133,7 @@
               <p class="valor">R$9,90</p>
               <img src="./images/check.png" class="simb-check">
             </div>
-            <div class="container-sobremesa" onclick="selecionarSobremesa(this)">
+            <div class="container-sobremesa" onclick="selecionarSobremesa(this, 'Mousse de Maracujá', 10.90)">
               <img src="./images/maracuja.jpg" class="foto">
               <p class="nome-prato">Mousse de Maracujá</p>
               <p class="desc-prato">Apenas mousse</p>

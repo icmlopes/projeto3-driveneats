@@ -157,9 +157,6 @@ body{
 .espacamento4{
     height: 100px;
 }
-/*.ocultar{
-    display: none;
-}*/
 .simb-check{
     position: absolute;
     left: 140px;
@@ -181,7 +178,5 @@ body{
     font-size: 20px;
     padding-top: 15px;
     color: #ffffff;
-}
-.botao-finalizar2{
     height: 35px;
 }
