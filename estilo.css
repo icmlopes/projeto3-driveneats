@@ -133,15 +133,16 @@ body{
     bottom: 0px;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 .botao-finalizar{
     width: 90%;
-    height: 50px;
     background-color: #cbcbcb;
     border-radius: 50px;
     align-items: center;
     text-align: center;
     margin: 15px auto;
+    border: none;
 }
 .text-finalizar{
     font-family: roboto;
@@ -176,7 +177,6 @@ body{
     font-family: roboto;
     font-weight: 400;
     font-size: 20px;
-    padding-top: 15px;
     color: #ffffff;
-    height: 35px;
+    padding: 13px 2px;
 }
